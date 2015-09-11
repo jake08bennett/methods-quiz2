@@ -36,7 +36,17 @@ module MethodsQuiz2
 		end
 	end
 
-			
+	def red_ticket(int1, int2, int3)
+		if int1 ==2 && int2 ==2 && int3 ==2
+			return 10
+		elsif (int1 ==1 && int2 ==1 && int3 ==1) || (int1 ==0 && int2 ==0 && int3 ==0)
+			return 5
+		elsif int1 != int2 && int1 != int3
+			return 1
+		else
+			return 0
+		end
+	end
 	
 
 end

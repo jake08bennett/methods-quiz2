@@ -31,6 +31,15 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal false, @m.squirrels_play?(110, true)
 	end
 
+	def test_red_ticket
+		assert_equal 10, @m.red_ticket(2, 2, 2)
+		assert_equal 5, @m.red_ticket(1, 1, 1)
+		assert_equal 5, @m.red_ticket(0, 0, 0)
+		assert_equal 1, @m.red_ticket(1, 2, 0)
+	end
+
+
+
 	# TODO - write tests here
 
 end
