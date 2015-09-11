@@ -17,12 +17,13 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal 3, @m.without_doubles(1, 2, false)
 	end
 
-	def max_maybe
-		assert_equal 0, @m.max_maybe(4, 4)
+	def test_max_maybe
 		assert_equal 8, @m.max_maybe(8, 5)
 		assert_equal 8, @m.max_maybe(18, 8)
-		assert_equal 4, @m.max_maybe(1, 4)
+		assert_equal 0, @m.max_maybe(1, 1)
 	end
+
+
 
 
 
